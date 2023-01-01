@@ -10,6 +10,7 @@
     --font-color: #000;
     --font-gray: #b3b3ba;
     --separator-color: #e6e6f0;
+    --negative-color: #ec6f5d;
   }
   
   * {
@@ -32,6 +33,10 @@
   select,
   textarea {
     font: inherit;
+  }
+
+  ul {
+    list-style-type: none;
   }
   
   html {

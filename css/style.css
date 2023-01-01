@@ -26,6 +26,10 @@
     max-height: 25px;
 }
 
+.bottom-links {
+    position: relative;
+}
+
 .page-name {
     color: var(--main-color);
     font-size: 36px;
@@ -128,4 +132,86 @@
     bottom: -3px;
     opacity: 1;
 }
+
+
+/* -----------------------------------------------------BURGER-MENU----------------------------------------------- */
+
+.check {
+    display: none;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: -45px;
+    right: 22px;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.burger {
+    display: none;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: -45px;
+    right: 22px;
+    z-index: 2;
+}
+
+.burger span {
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+}
+
+.burger span:first-child {
+    top: 0;
+}
+
+.burger span:nth-child(2),
+.burger span:nth-child(3) {
+    top: 6px;
+}
+
+.burger span:last-child {
+    top: 12px;
+}
+
+.check:checked ~ .burger span:first-child {
+    top: -10px;
+    opacity: 0;
+}
+
+.check:checked ~ .burger span:nth-child(2) {
+    transform: rotate(45deg);
+    background-color: var(--negative-color);
+}
+
+.check:checked ~ .burger span:nth-child(3) {
+    transform: rotate(-45deg);
+    background-color: var(--negative-color);
+}
+
+.check:checked ~ .burger span:last-child {
+    top: 24px;
+    opacity: 0;
+}
+
+.check:checked ~ .header-nav {
+    display: block;
+    background-color: rgba(50, 50, 100, 0.7);
+    z-index: 1;
+    opacity: 1;
+}
+
+.check:checked ~ .header-nav ul {
+    transform: translateY(0);
+}
+
+
+
+
 
