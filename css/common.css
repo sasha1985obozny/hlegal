@@ -1,6 +1,15 @@
 :root {
+    --container-width: 1360px;
+    --container-wide-width: 1600px;
+    --container-space: 60px;
+    --main-color: #323264;
+    --accent-color: #f0145a;
+    --active-regular-color: #24a3ff;
+    --grey-color: #f5f5fa;
+    --white-color: #fff;
     --font-color: #000;
-    --font-light: #828282;
+    --font-gray: #b3b3ba;
+    --separator-color: #e6e6f0;
   }
   
   * {
@@ -35,31 +44,61 @@
   
   .container {
     width: 100%;
-    max-width: calc(1110px + 2rem);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    max-width: calc(var(--container-width) + var(--container-space)*2);
+    padding-left: var(--container-space);
+    padding-right: var(--container-space);
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .container.wide {
+    max-width: calc(var(--container-wide-width) + var(--container-space)*2);
   }
 
   .flex {
     display: flex;
   }
+
   .flex-wrap {
     flex-wrap: wrap;
   }
+
   .flex-col {
     flex-direction: column;
   }
+
   .flex-1 {
     flex: 1;
   }
+
   .items-center {
     align-items: center;
   }
+
   .justify-center {
     justify-content: center;
   }
+
   .justify-between {
     justify-content: space-between;
+  }
+
+  .justify-end {
+    justify-content: flex-end;
+  }
+
+  .align-start {
+    align-items: flex-start;
+  }
+
+  .gap-15 {
+    gap: 15px;
+  }
+
+  .gap-4 {
+    gap: 4px;
+  }
+
+  .grid {
+    display: grid;
   }
