@@ -64,11 +64,20 @@
 .separator {
     display: inline-block;
     width: 6px;
-    height: 6px;
+    height: 6px;    
+    border-radius: 50%;
+}
+
+.in-header {
+    background-color: var(--separator-color);
     margin-left: 6px;
     margin-right: 6px;
-    border-radius: 50%;
-    background-color: var(--separator-color);
+}
+
+.in-footer {
+    background-color: var(--font-gray);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .address {
@@ -232,4 +241,53 @@
 }
 
 
+/* ----------------------------------------------------FOOTER--------------------------------------------------------- */
 
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--grey-color);
+    line-height: 1.25;
+}
+
+.footer-address {
+    color: var(--main-color);
+}
+
+.map-link,
+.footer-email {
+    font-weight: 700;
+    color: var(--active-regular-color);
+    transition: all .7s ease;
+}
+
+.map-link {
+    font-size: 12px;    
+    text-transform: uppercase;    
+}
+
+.map-link:hover,
+.footer-email:hover {
+    color: var(--accent-color);
+}
+
+.footer-facebook-link {
+    display: flex;
+}
+
+.footer-facebook-link svg path {
+    transition: all .7s ease;
+}
+
+.footer-facebook-link:hover svg path {
+    fill: var(--accent-color);
+}
+
+.footer-tel {
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.copyright {
+    color: var(--font-gray);
+}
