@@ -301,9 +301,41 @@
     stroke: var(--accent-color);
 }
 
+/* --------------------------------------------------INNER-TEAM------------------------------------------------ */
 
+.wrapper-inner-team.grid {
+    grid-template-areas: 
+    'inner-team-photo inner-team-info'
+    'inner-team-photo inner-team-descr';
+    column-gap: var(--container-space);
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 83px 1fr;
+    min-height: 500px;
+}
 
+.grid .inner-team-photo {
+    grid-area: inner-team-photo;
+}
 
+.grid .inner-team-info {
+    grid-area: inner-team-info;
+}
+
+.grid .inner-team-descr {
+    grid-area: inner-team-descr;
+}
+
+.employee-img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.inner-team-descr {
+    margin-top: 30px;
+    border-top: 4px solid var(--separator-color);
+    padding-top: 30px;
+}
 
 /* ----------------------------------------------------FOOTER--------------------------------------------------------- */
 

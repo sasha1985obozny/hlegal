@@ -18,6 +18,7 @@
     .page-header {
         max-width: 1080px;
     }
+
 }
 
 @media screen and (max-width: 1366px) {
@@ -33,6 +34,14 @@
 
     .page-header {
         max-width: 664px;
+    }
+
+    .wrapper-inner-team.grid {
+        grid-template-columns: 300px 1fr;
+    }
+
+    .employee-img {
+        height: 375px;
     }
 }
 
@@ -63,6 +72,22 @@
     .top-links{
         margin-bottom: 30px;
     }
+
+    .wrapper-inner-team.grid {
+        grid-template-areas: 
+        'inner-team-photo inner-team-info'
+        'inner-team-descr inner-team-descr';
+        grid-template-rows: 375px 1fr;
+    }
+
+    .inner-team-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .page-header.inner-team {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 940px) {
@@ -74,6 +99,10 @@
 @media screen and (max-width: 768px) {
     .page-header {
         max-width: 648px;
+    }
+
+    .wrapper-inner-team.grid {
+        column-gap: 30px;
     }
 }
 
@@ -184,12 +213,30 @@
         font-size: 30px;
         line-height: 1.23;
     }
+
+    .inner-team-photo {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 560px) {
     .wrapper {
         grid-template-columns: repeat(1, 1fr);
     }   
+
+    .wrapper-inner-team.grid {
+        grid-template-areas: 
+        'inner-team-photo'
+        'inner-team-info'
+        'inner-team-descr';
+        grid-template-columns: 1fr;
+    }
+
+    .employee-img {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 480px) {
