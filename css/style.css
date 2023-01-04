@@ -92,8 +92,7 @@
 }
 
 .facebook-link {
-    display: inline-block;
-    line-height: 0.6;
+    display: flex;
 }
 
 .facebook-link svg path {
@@ -239,6 +238,65 @@
     object-fit: cover;
     border-radius: 12px;
 }
+
+.team-details {
+    margin-top: 15px;
+}
+
+.team-head {
+    position: relative;
+}
+
+.team-name {
+    font-weight: 700;
+    color: var(--main-color);
+    line-height: 1.25;
+    padding-right: 45px;
+    transition: all .7s ease;
+}
+
+.position {
+    font-size: 14px;
+    line-height: 1.57;
+    color: var(--font-gray);
+    margin-top: 5px;
+    padding-right: 45px;
+}
+
+.more-team-link {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.more-team-link svg path,
+.more-team-link svg circle {
+    transition: all .7s ease;
+}
+
+.more-team-link:hover svg path {
+    stroke: var(--accent-color);
+}
+
+.more-team-link:hover svg circle {
+    fill: var(--grey-bg-alt);
+}
+
+.more-team-link:hover + .team-name{
+    color: var(--accent-color);
+}
+
+.team-name:hover {
+    color: var(--accent-color);
+}
+
+.team-name:hover + .more-team-link svg path{
+    stroke: var(--accent-color);
+}
+
+
+
 
 
 /* ----------------------------------------------------FOOTER--------------------------------------------------------- */
