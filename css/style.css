@@ -148,11 +148,11 @@
 
 .check {
     display: none;
-    width: 18px;
-    height: 18px;
+    width: 32px;
+    height: 32px;
     position: absolute;
-    top: -45px;
-    right: 22px;
+    top: -52px;
+    right: 15px;
     opacity: 0;
     z-index: 3;
     cursor: pointer;
@@ -160,12 +160,18 @@
 
 .burger {
     display: none;
-    width: 18px;
-    height: 18px;
+    width: 32px;
+    height: 32px;
     position: absolute;
-    top: -45px;
-    right: 22px;
+    top: -52px;
+    right: 15px;
     z-index: 2;
+    border-radius: 8px;
+    transition: all .7s ease;
+}
+
+.check:hover + .burger {
+    background-color: var(--separator-color);
 }
 
 .burger span {
@@ -174,20 +180,20 @@
     height: 2px;
     background-color: var(--main-color);
     position: absolute;
-    left: 0;
+    left: 7px;
 }
 
 .burger span:first-child {
-    top: 0;
+    top: 9px;
 }
 
 .burger span:nth-child(2),
 .burger span:nth-child(3) {
-    top: 6px;
+    top: 15px;
 }
 
 .burger span:last-child {
-    top: 12px;
+    top: 21px;
 }
 
 .check:checked ~ .burger span:first-child {
@@ -251,7 +257,7 @@
     font-weight: 700;
     color: var(--main-color);
     line-height: 1.25;
-    padding-right: 45px;
+    margin-right: 45px;
     transition: all .7s ease;
 }
 

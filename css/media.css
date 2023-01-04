@@ -1,3 +1,14 @@
+@media screen and (min-width: 2560px) {
+    :root {
+        --container-width: 1600px;
+        --container-wide-width: 1920px;
+    }
+
+    .page-header {
+        max-width: 1600px;
+    }
+}
+
 @media screen and (max-width: 1440px) {
     :root {
         --container-width: 1080px;
@@ -70,12 +81,12 @@
 
     .check {
         display: block;
-        top: -85px;
+        top: -72px;
     }
     
     .burger {
         display: block;
-        top: -85px;
+        top: -72px;
     }
 
     :root {
@@ -130,7 +141,7 @@
         width: 100%;
         height: 100%;
         font-size: 24px;
-        padding-top: 64px;
+        padding-top: 92px;
         transform: translateY(100%);
         transition: all 0.5s ease;
         padding-left: 12px;
@@ -203,12 +214,16 @@
     }   
     
     .check {
-        top: -45px;
+        top: -57px;
     }
     
     .burger {
-        top: -45px;
+        top: -57px;
     } 
+
+    .header-nav ul {
+        padding-top: 60px;
+    }
 }
 
 @media screen and (max-width: 375px) {
