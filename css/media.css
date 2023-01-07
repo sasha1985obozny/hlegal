@@ -104,6 +104,10 @@
     .wrapper-inner-team.grid {
         column-gap: 30px;
     }
+
+    .contact-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media screen and (max-width: 767px) {

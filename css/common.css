@@ -5,6 +5,9 @@
     --main-color: #323264;
     --accent-color: #f0145a;
     --active-regular-color: #24a3ff;
+    --button-hover-color: #0085ff;
+    --button-active-color: #006ccf;
+    --input-invalid-color: #f00;
     --grey-color: #f5f5fa;
     --grey-bg-alt: #ededf7;
     --white-color: #fff;
@@ -112,6 +115,14 @@
 
   .grid {
     display: grid;
+  }
+
+  .mb-15 {
+    margin-bottom: 15px;
+  }
+
+  .mb-30 {
+    margin-bottom: 30px;
   }
 
 /* ---------------------------------------------PADINGS------------------------------------------ */
