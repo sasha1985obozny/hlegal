@@ -134,7 +134,10 @@ textarea:disabled {
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:focus {
+input:-webkit-autofill:focus,
+input:-webkit-internal-autofill-selected,
+input:-webkit-internal-autofill-selected:focus
+ {
     transition: background-color 600000s 0s, color 0s 0s;
 }
 
