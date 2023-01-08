@@ -133,6 +133,11 @@ textarea:disabled {
     border: 1px solid var(--grey-bg-alt);
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 0s 0s;
+}
+
 .contact-message {
     height: 130px;
 }
