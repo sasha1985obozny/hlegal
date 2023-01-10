@@ -1,0 +1,56 @@
+.publications {
+    background-color: var(--grey-color);
+}
+
+.publications-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.publication-card {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    padding-bottom: 30px;
+}
+
+.publication-img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.publication-card-container {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.publication-header {
+    line-height: 1.25;
+    color: var(--active-regular-color);
+    font-weight: 700;
+    transition: all .7s ease;
+}
+
+.publication-header:hover {
+    color: var(--accent-color);
+}
+
+.publication-date {
+    font-size: 12px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: var(--font-gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid var(--separator-color);
+}
+
+.publication-intro {
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 1.57;
+}

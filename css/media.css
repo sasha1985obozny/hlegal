@@ -108,6 +108,10 @@
     .contact-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .publications-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -227,6 +231,10 @@
     .wrapper {
         grid-template-columns: repeat(1, 1fr);
     }   
+
+    .publications-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     .wrapper-inner-team.grid {
         grid-template-areas: 
