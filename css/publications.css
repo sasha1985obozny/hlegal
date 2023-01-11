@@ -2,6 +2,38 @@
     background-color: var(--grey-color);
 }
 
+.choice-wrapper {
+    background-color: var(--separator-color);
+    padding: 2px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.choice-link {
+    line-height: 1.25;
+    color: var(--main-color);
+    font-weight: 700;
+    background-color: transparent;
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    transition: all .7s ease;
+}
+
+.choice-link:hover {
+    background-color: var(--grey-color);
+}
+
+.active-choice-link,
+.active-choice-link:hover {
+    background-color: var(--white-color);
+}
+
 .publications-wrapper {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -53,4 +85,20 @@
     padding-top: 15px;
     font-size: 14px;
     line-height: 1.57;
+}
+
+.more-publications-link {
+    line-height: 1.25;
+    font-weight: 700;
+    color: var(--white-color);
+    padding: 18px 30px;
+    background-color: var(--active-regular-color);
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    margin-top: 30px;
+    transition: all .7s ease;
+}
+
+.more-publications-link:hover {
+    background-color: var(--button-hover-color);
 }
