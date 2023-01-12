@@ -9,6 +9,13 @@
     }
 }
 
+@media screen and (max-width: 1740px) {
+    .achievements-slider-wrapper {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
 @media screen and (max-width: 1440px) {
     :root {
         --container-width: 1080px;
@@ -19,12 +26,18 @@
         max-width: 1080px;
     }
 
+    .achievements-slider-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
 
 @media screen and (max-width: 1366px) {
-    /* :root {
-        --container-space: 23px;
-    } */
+    .achievements-slider-wrapper {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -42,6 +55,10 @@
 
     .employee-img {
         height: 375px;
+    }
+
+    .team-text {
+        font-size: 86px;
     }
 }
 
@@ -88,6 +105,14 @@
     .page-header.inner-team {
         margin-left: 0;
     }
+
+    .about-top-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .about-bottom-wrapper {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 940px) {
@@ -111,6 +136,14 @@
 
     .publications-wrapper {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-text {
+        font-size: 46px;
+    }
+
+    .achievement-slide {
+        height: 90px;
     }
 }
 
@@ -282,6 +315,11 @@
 
     .header-nav ul {
         padding-top: 60px;
+    }
+
+    .team-text {
+        font-size: 36px;
+        letter-spacing: 13px;
     }
 }
 
