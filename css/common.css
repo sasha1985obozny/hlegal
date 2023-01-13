@@ -52,6 +52,10 @@
     line-height: 1.625; /* 26px*/
     color: var(--font-color);
   }
+
+  body {
+    position: relative;
+  }
   
   .container {
     width: 100%;
@@ -148,6 +152,10 @@
 
   .pt-30 {
     padding-top: 30px;
+  }
+
+  .pt-176 {
+    padding-top: 176px;
   }
 
 /* ---------------------------------------------PADINGS------------------------------------------ */

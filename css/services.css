@@ -1,0 +1,154 @@
+.header.white-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.page-name.white-name,
+.lang-link.white-lang,
+.address.white-address,
+.tel.white-tel,
+.nav-link-item.white-nav-link {
+    color: var(--white-color);
+}
+
+.nav-link-item.white-nav-link::after {
+    background-color: var(--white-color);
+}
+
+.facebook-link.white-fb svg path {
+    fill: var(--white-color);
+}
+
+.lang-link.white-lang:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.what-we-do-better {
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    position: relative;
+    margin-bottom: 84px;
+}
+
+.page-header.ml-0 {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: max-content;
+}
+
+.services-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.service-img {
+    width: 92px;
+    height: 92px;   
+    background-color: var(--white-color);
+    border-radius: 24px;
+}
+
+.service-header {
+    font-size: 22px;
+    line-height: 1.35;
+    font-weight: 700;
+    color: var(--active-regular-color);
+    transition: all .7s ease;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    max-width: max-content;
+}
+
+.service-header:hover {
+    color: var(--accent-color);
+}
+
+.service-descr {
+    color: var(--white-color);
+}
+
+.what-we-do-better::before {
+    content: '';
+    display: block;
+    background-color: #cacadb;
+    position: absolute;
+    height: 24px;
+    border-radius: 12px;
+    top: calc(100% - 12px);
+    left: 20px;
+    right: 20px;
+    z-index: -1;
+}
+
+.what-we-do-better::after {
+    content: '';
+    display: block;
+    background-color: #e7e7f2;
+    position: absolute;
+    height: 24px;
+    border-radius: 12px;
+    top: 100%;
+    left: 40px;
+    right: 40px;
+    z-index: -2;
+}
+
+.clients-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.client-box {
+    height: 120px;
+}
+
+.hillel {
+    background-color: #1c4280;
+}
+
+.wannabiz {
+    background-color: #143646;
+}
+
+.tapgerine {
+    background-color: #f48b30;
+}
+
+.threedlook {
+    background-color: #9e4dc3;
+}
+
+.orangear {
+    background-color: #ff9339;
+}
+
+.adtelligent {
+    background-color: #e2e2e4;
+}
+
+.clickky {
+    background-color: #c71c36;
+}
+
+.eco-leasing {
+    background-color: #dcf3f9;
+}
+
+.ingratek {
+    background-color: #eaeaea;
+}
+
+.city-park {
+    background-color: #282240;
+}
+
+.artprint {
+    background-color: #1d4568;
+}
+
+.ultimatecard {
+    background-color: #000;
+}
