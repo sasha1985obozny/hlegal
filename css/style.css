@@ -152,7 +152,7 @@
 
 .check {
     display: none;
-    width: 32px;
+    min-width: 32px;
     height: 32px;
     position: absolute;
     top: -52px;
@@ -178,6 +178,10 @@
     background-color: var(--separator-color);
 }
 
+.check:active + .burger.purple-burger {
+    background-color: rgba(245, 245, 250, 0.2);
+}
+
 .burger span {
     display: inline-block;
     width: 18px;
@@ -185,6 +189,10 @@
     background-color: var(--main-color);
     position: absolute;
     left: 7px;
+}
+
+.burger span.white-span {
+    background-color: var(--white-color);
 }
 
 .burger span:first-child {

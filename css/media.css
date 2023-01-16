@@ -7,6 +7,33 @@
     .page-header {
         max-width: 1600px;
     }
+
+    .clients-wrapper {
+        max-width: 2220px;
+    }
+}
+
+@media screen and (max-width: 1780px) {
+    .clients-wrapper {
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+
+    .hillel {
+        border-top-left-radius: 0;
+    }
+
+    .threedlook {
+        border-top-right-radius: 0;
+    }
+
+    .ingratek {
+        border-bottom-left-radius: 0;
+    }
+
+    .ultimatecard {
+        border-bottom-right-radius: 0;
+    }
 }
 
 @media screen and (max-width: 1740px) {
@@ -113,11 +140,23 @@
     .about-bottom-wrapper {
         grid-template-columns: 1fr;
     }
+
+    .pt-main {
+        padding-top: 250px;
+    }
 }
 
 @media screen and (max-width: 940px) {
     .wrapper {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .clients-wrapper {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -182,11 +221,16 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .top-links {
         background-color: var(--grey-color);
         max-height: 45px;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+    .top-links.purple-top {
+        background-color: rgba(245, 245, 250, 0.2);
     }
 
     .container.wide.wide-gray {
@@ -246,6 +290,18 @@
         flex-direction: column;
         gap: 10px;
     }
+
+    .pt-main {
+        padding-top: 174px;
+    }
+
+    .clients-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-link-item.white-nav-link {
+        color: var(--active-regular-color);
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -281,6 +337,14 @@
         width: 300px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .clients-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services-wrapper {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -320,6 +384,19 @@
     .team-text {
         font-size: 36px;
         letter-spacing: 13px;
+    }
+
+    .pt-main {
+        padding-top: 132px;
+    }
+
+    .clickky,
+    .eco-leasing,
+    .ingratek,
+    .city-park,
+    .artprint,
+    .ultimatecard {
+        display: none;
     }
 }
 

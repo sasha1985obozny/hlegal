@@ -26,6 +26,10 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
+.pt-main {
+    padding-top: 176px;
+}
+
 .what-we-do-better {
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-bottom-left-radius: 12px;
@@ -36,7 +40,6 @@
 
 .page-header.ml-0 {
     margin-left: 0;
-    margin-right: 0;
     max-width: max-content;
 }
 
@@ -99,6 +102,11 @@
 
 .clients-wrapper {
     grid-template-columns: repeat(4, 1fr);
+    max-width: 1720px;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
 }
 
 .client-box {
@@ -107,6 +115,7 @@
 
 .hillel {
     background-color: #1c4280;
+    border-top-left-radius: 12px;
 }
 
 .wannabiz {
@@ -119,6 +128,7 @@
 
 .threedlook {
     background-color: #9e4dc3;
+    border-top-right-radius: 12px;
 }
 
 .orangear {
@@ -139,6 +149,7 @@
 
 .ingratek {
     background-color: #eaeaea;
+    border-bottom-left-radius: 12px;
 }
 
 .city-park {
@@ -151,4 +162,5 @@
 
 .ultimatecard {
     background-color: #000;
+    border-bottom-right-radius: 12px;
 }
