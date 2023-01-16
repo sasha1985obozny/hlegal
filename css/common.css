@@ -122,8 +122,16 @@
     gap: 2px;
   }
 
+  .gap-15 {
+    gap: 15px;
+  }
+
   .gap-21 {
     gap: 21px;
+  }
+
+  .gap-28 {
+    gap: 28px;
   }
 
   .gap-40 {
@@ -136,6 +144,10 @@
 
   .mt-0 {
     margin-top: 0;
+  }
+
+  .mr-0 {
+    margin-right: 0;
   }
 
   .mb-15 {

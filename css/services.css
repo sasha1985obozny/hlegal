@@ -43,6 +43,10 @@
     max-width: max-content;
 }
 
+.page-header.mr-0 {
+    margin-right: 0;
+}
+
 .services-wrapper {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
@@ -163,4 +167,88 @@
 .ultimatecard {
     background-color: #000;
     border-bottom-right-radius: 12px;
+}
+
+/* ---------------------------------------------------SERVICE-ENTRY--------------------------------------------- */
+
+.service-entry-text {
+    font-size: 19px;
+    line-height: 1.58;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.service-entry-wrapper {
+    padding-bottom: 60px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+}
+
+.more-publications-link.mt-0 {
+    margin-top: 0;
+}
+
+.service-entry-list-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.service-entry-list-header {
+    font-size: 22px;
+    line-height: 1.23;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 30px;
+}
+
+.list-of-services {
+    font-size: 18px;
+    line-height: 1.44;
+    list-style-type: disc;
+    padding-left: 17px;
+    color: var(--white-color);
+}
+
+.service-list-item::marker {
+    color: var(--accent-color);
+}
+
+.recommended-publications {
+    background-color: var(--grey-color);
+    padding-top: 30px; 
+}
+
+.recommended-publications-title{
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--active-regular-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.recommended-publications-wrapper {
+    border-bottom: 2px solid var(--separator-color);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.page-header.mt-10{
+    margin-top: 10px;
+}
+
+.recommended-publications-wrapper.grid {
+    grid-template-areas: 
+    'first-article second-article third-article';
+    gap: 30px;
+}
+
+.grid .first-article {
+    grid-area: first-article;
+}
+
+.grid .second-article {
+    grid-area: second-article;
+}
+
+.grid .third-article {
+    grid-area: third-article;
 }
