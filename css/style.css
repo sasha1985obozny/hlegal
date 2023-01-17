@@ -233,6 +233,7 @@
     background-color: rgba(50, 50, 100, 0.7);
     z-index: 1;
     opacity: 1;
+    inset: 0;
 }
 
 .check:checked ~ .header-nav ul {
@@ -321,7 +322,6 @@
     'inner-team-photo inner-team-descr';
     column-gap: var(--container-space);
     grid-template-columns: 400px 1fr;
-    grid-template-rows: 83px 1fr;
     min-height: 500px;
 }
 
@@ -347,6 +347,36 @@
     margin-top: 30px;
     border-top: 4px solid var(--separator-color);
     padding-top: 30px;
+}
+
+.employee-info {
+    margin-top: 15px;
+}
+
+.inner-team-descr-text + .inner-team-descr-text {
+    margin-top: 30px;
+}
+
+.employee-subheader {
+    font-size: 14px;
+    line-height: 1.21;
+    font-weight: 700;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.employee-position {
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--font-gray);
+}
+
+.employee-info-link {
+    line-height: 1.25;
+    color: var(--active-regular-color);
 }
 
 /* ----------------------------------------------------FOOTER--------------------------------------------------------- */

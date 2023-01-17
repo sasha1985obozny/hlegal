@@ -24,6 +24,17 @@ $(document).ready(function() {
       
       setTimeout(function () {
           form.submit();
+          $("input").val('');
+          $("textarea").val('');
+          if ($(".popup-form").hasClass("popup-form-show")){
+            $(".popup-wrapper").removeClass("active-popup");
+            $(".popup-form").removeClass("popup-form-show");
+            $(".contact-btn").css('color', '#fff');
+            $(".contact-btn").text("Send message");
+            $(".contact-btn").append('<div class="progress-btn" data-progress-style="indefinite-circle"><svg class="progress circle-loader" width="40" height="40" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="15"></svg></div>');
+            $(".contact-btn").css('box-shadow', '0px 0px 20px rgba(36, 163, 255, 0.5)');
+            $(".contact-btn").css('background', '#24a3ff');
+      }
       }, 7000); 
   });	
       
@@ -54,5 +65,17 @@ $(document).ready(function() {
       ]
     });
 
+    $(".popup-btn").on("click", function (){
+      $(".popup-wrapper").addClass("active-popup");
+      $(".popup-form").addClass("popup-form-show");
+    });
+
+    $(".close-popup-btn").on("click", function (){
+      $(".popup-wrapper").removeClass("active-popup");
+      $(".popup-form").removeClass("popup-form-show");
+    });
+
   });
+  
+
   

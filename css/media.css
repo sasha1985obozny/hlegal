@@ -67,6 +67,18 @@
     }
 }
 
+@media screen and (max-width: 1150px) {
+    .employee-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .separator.in-header.in-employee {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     :root {
         --container-space: 60px;
@@ -121,16 +133,18 @@
         grid-template-areas: 
         'inner-team-photo inner-team-info'
         'inner-team-descr inner-team-descr';
-        grid-template-rows: 375px 1fr;
+        column-gap: 30px;
     }
 
     .inner-team-info {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .page-header.inner-team {
         margin-left: 0;
+        margin-top: 30px;
     }
 
     .about-top-wrapper {
@@ -247,9 +261,9 @@
     .header-nav {
         opacity: 0;
         position: fixed;
-        inset: 0;
         z-index: -1;
         padding: 40px 8px;
+        bottom: -100%;
     }
 
     .header-nav ul {
@@ -332,6 +346,16 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
     }
+
+    .contact-form form.popup-form {
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .popup-form .page-header.form-caption {
+        max-width: 80%;
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -349,12 +373,6 @@
         'inner-team-info'
         'inner-team-descr';
         grid-template-columns: 1fr;
-    }
-
-    .employee-img {
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .clients-wrapper {
@@ -427,6 +445,10 @@
 @media screen and (max-width: 360px) {
     .copyright {
         font-size: 14px;
+    }
+
+    .contact-mail-value {
+        font-size: 18px;
     }
 }
 
