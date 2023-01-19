@@ -220,12 +220,29 @@
     border-top-right-radius: 12px;
 }
 
+.recommended-publications-header {
+    max-width: max-content;
+}
+
 .recommended-publications-title{
     font-size: 14px;
     line-height: 1.21;
     color: var(--active-regular-color);
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: all .7s ease;  
+}
+
+.recommended-publications-header:hover .recommended-publications-title{
+    color: var(--accent-color);
+}
+
+.recommended-publications-header svg path.recomended-arrow {
+    transition: all .7s ease;
+}
+
+.recommended-publications-header:hover svg path.recomended-arrow{
+    stroke: var(--accent-color);
 }
 
 .recommended-publications-wrapper {
