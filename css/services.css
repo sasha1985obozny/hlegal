@@ -215,7 +215,9 @@
 
 .recommended-publications {
     background-color: var(--grey-color);
-    padding-top: 30px; 
+    padding-top: 30px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .recommended-publications-title{

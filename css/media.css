@@ -356,6 +356,10 @@
         max-width: 80%;
         margin-left: 0;
     }
+
+    .full-text-img {
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -434,6 +438,7 @@
     .ultimatecard {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 375px) {

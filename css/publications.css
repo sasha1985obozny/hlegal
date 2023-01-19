@@ -102,3 +102,95 @@
 .more-publications-link:hover {
     background-color: var(--button-hover-color);
 }
+
+
+/* ------------------------------------------------FULL-TEXT------------------------------------------ */
+
+.full-text-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.full-text-header {
+    font-size: 30px;
+    line-height: 1.23;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-top: 30px;
+}
+
+.publication-date.full-text-date {
+    padding-bottom: 30px;
+}
+
+.full-text {
+    padding-top: 30px;
+}
+
+.page-header.ml-0.in-full-text {
+    text-align: left;
+    padding-top: 30px;
+}
+
+.full-text-subheader {
+    font-size: 22px;
+    line-height: 1.23;
+    font-weight: 700;
+    color: var(--main-alt-color);
+    padding-top: 30px;
+}
+
+.full-text-ol {
+    padding-left: 40px;
+}
+
+.full-text-li {
+    font-size: 18px;
+    line-height: 1.44;
+    margin-top: 15px;
+}
+
+.full-text-li::marker {
+    font-size: 18px;
+    line-height: 1.44;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.full-text-inner-img {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.full-text-inner-img img {
+    width: 100%;
+    max-width: 640px;
+}
+
+.illustration-header {
+    font-size: 14px;
+    line-height: 1.57;
+    color: var(--font-gray);
+    margin-top: 10px;
+}
+
+.full-text-social {
+    padding-top: 30px;
+    border-top: 4px solid var(--separator-color);
+    margin-top: 30px;
+}
+
+.full-text-social-box {
+    width: 42px;
+    height: 42px;
+    padding: 9px;
+    background-color: var(--grey-color);
+    border-radius: 12px;
+    transition: all .7s ease;
+}
+
+.full-text-social-box:hover {
+    background-color: var(--grey-bg-alt);
+}

@@ -4,6 +4,7 @@
     --slider-margin: 20px;
     --container-space: 60px;
     --main-color: #323264;
+    --main-alt-color: #46466e;
     --accent-color: #f0145a;
     --active-regular-color: #24a3ff;
     --button-hover-color: #0085ff;
@@ -120,6 +121,10 @@
 
   .gap-2 {
     gap: 2px;
+  }
+
+  .gap-10 {
+    gap: 10px;
   }
 
   .gap-15 {
