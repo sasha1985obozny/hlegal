@@ -386,6 +386,10 @@
     .services-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .scroll-box {
+        bottom: 70px;
+    }
 }
 
 @media screen and (max-width: 480px) {
