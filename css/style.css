@@ -147,12 +147,72 @@
     opacity: 1;
 }
 
+/* ----------------------------------------------------FIRST-SCREEN----------------------------------------------- */
+
+.first-screen {
+    min-height: 100vh;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.first-screen-header {
+    font-size: 38px;
+    line-height: 1.21;
+    color: var(--white-color);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.letter-h {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100vh;
+    transform: translateX(-50%);
+    max-width: none;
+}
+
+.scroll-box {
+    position: absolute;
+    display: inline-block;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: toTab 3s infinite;
+}
+
+@keyframes toTab {
+    0% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.scroll-box svg circle,
+.scroll-box svg path {
+    transition: all .7s ease;
+}
+
+.scroll-box:hover svg circle.to-tab-circle,
+.scroll-box:hover svg path.bottom-arrow {
+    stroke: var(--accent-color);
+}
+
+.first-screen-tabs {
+    height: 300px;
+}
 
 /* -----------------------------------------------------BURGER-MENU----------------------------------------------- */
 
 .check {
     display: none;
-    min-width: 32px;
+    width: 32px;
     height: 32px;
     position: absolute;
     top: -52px;

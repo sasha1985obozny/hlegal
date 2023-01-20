@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="HLEGAL Law company" />
+    <meta property="og:description" content="Graduation work on the course Front End Basic Hillel by Oboznyi Oleksandr" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://sasha1985obozny.github.io/hlegal/img/logo.svg" />
+    <meta property="og:url" content="https://sasha1985obozny.github.io" />
     <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./img/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/slick/slick-theme.css">
@@ -12,6 +17,16 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
     <title>HLEGAL Law company</title>
+    <script>
+        function scrollToElem(elem) {
+          event.preventDefault()
+          const target = document.querySelector(elem.hash)
+          window.scrollTo({
+            top: target.offsetTop,
+            behavior: "smooth"
+          })
+        }
+    </script>
 </head>
 <body>
 
@@ -65,9 +80,37 @@
 <!-- ///////////////////////////////////////////////MAIN//////////////////////////////////////////////////////////////// -->
 
     <main class="main">
-        <section class="what-we-do-better pt-main pb-space">
+        <section class="what-we-do-better pb-space">
             <div class="container wide">
-                <h1 class="page-header ml-0">What can we do better than others?</h1>
+                <div class="first-screen flex items-center justify-center">
+                    <h1 class="first-screen-header">
+                        your legal solutions provider
+                    </h1>
+                    <img src="./img/h.svg" alt="h" class="letter-h">
+                    <a href="#tab" class="scroll-box" onclick="scrollToElem(this)">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_22728_11339)">
+                            <circle class="to-tab-circle" opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
+                            <path class="bottom-arrow" d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_22728_11339">
+                            <rect width="42" height="42" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <div class="first-screen-tabs" id="tab">
+                    
+                </div>
+                <a href="./pages/services.html" class="recommended-publications-header flex items-center gap-2">
+                    <h3 class="recommended-publications-title">services</h3> 
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="recomended-arrow" d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
+                    </svg>
+                </a>
+                <h1 class="page-header ml-0 mt-10">What can we do better than others?</h1>
                 <div class="services-wrapper grid pt-space">
                     <div class="service-item flex flex-col">
                         <div class="service-img flex items-center justify-center">
@@ -168,6 +211,43 @@
                 </div>
                 <div class="client-box ultimatecard flex items-center justify-center">
                     <img src="./img/ultimatecard.png" alt="ultimatecard">
+                </div>
+            </div>
+        </section>
+        <section class="recommended-publications without-border-radius">
+            <div class="container wide">
+                <a href="./pages/publications.html" class="recommended-publications-header flex items-center gap-2">
+                    <h3 class="recommended-publications-title">publications</h3> 
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="recomended-arrow" d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
+                    </svg>
+                </a>
+                <h2 class="page-header ml-0 mt-10">We have something to tell</h2>
+                <div class="recommended-publications-wrapper grid">
+                    <div class="publication-card flex flex-col first-article">
+                        <img src="./img/publication-1.jpg" class="publication-img" alt="publication-1">
+                        <div class="publication-card-container">
+                            <a href="./pages/publications/equity.html" class="publication-header">Equity associate</a>
+                            <p class="publication-date">April 22</p>
+                            <p class="publication-intro">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                        </div>                        
+                    </div>
+                    <div class="publication-card flex flex-col second-article">
+                        <img src="./img/publication-2.jpg" class="publication-img" alt="publication-2">
+                        <div class="publication-card-container">
+                            <a href="./pages/publications/penalty.html" class="publication-header">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a>
+                            <p class="publication-date">September 29</p>
+                            <p class="publication-intro">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                        </div>                        
+                    </div>
+                    <div class="publication-card flex flex-col third-article">
+                        <img src="./img/publication-3.jpg" class="publication-img" alt="publication-3">
+                        <div class="publication-card-container">
+                            <a href="./pages/publications/millenial.html" class="publication-header">Millennial Testament</a>
+                            <p class="publication-date">August 19</p>
+                            <p class="publication-intro">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                        </div>                        
+                    </div>
                 </div>
             </div>
         </section>

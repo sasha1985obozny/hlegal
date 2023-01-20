@@ -194,3 +194,8 @@
 .full-text-social-box:hover {
     background-color: var(--grey-bg-alt);
 }
+
+.recommended-publications.without-border-radius {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
