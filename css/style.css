@@ -212,6 +212,47 @@
     height: 300px;
 }
 
+/* --------------------------------------------------HOME-PAGE-SLIDER--------------------------------------------- */
+
+.team-slider-item {
+    grid-template-columns: 400px 1fr;
+    border-radius: 12px;
+}
+
+.team-slider-item img {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.team-slider-item-detail {
+    background-color: #e7e7f2;
+    width: 100%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 30px;
+}
+
+.page-header.ml-0.mt-10.team-slider-header {
+    text-align: left;
+}
+
+.team-slider-name {
+    color: var(--font-gray);
+    line-height: 1.25;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.team-slider-position {
+    font-size: 14px;
+    line-height: 1.57;
+    color: var(--font-gray);
+    margin-top: 6px;
+}
+
 /* -----------------------------------------------------BURGER-MENU----------------------------------------------- */
 
 .check {

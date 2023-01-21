@@ -65,6 +65,11 @@ $(document).ready(function() {
       ]
     });
 
+    $(".team-slider-items").slick({
+      arrows: false,
+      dots: true
+    });
+
     $(".popup-btn").on("click", function (){
       $(".popup-wrapper").addClass("active-popup");
       $(".popup-form").addClass("popup-form-show");
