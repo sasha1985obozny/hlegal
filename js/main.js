@@ -73,12 +73,30 @@ $(document).ready(function() {
     $(".popup-btn").on("click", function (){
       $(".popup-wrapper").addClass("active-popup");
       $(".popup-form").addClass("popup-form-show");
+      $("body").addClass("under-modal");
     });
 
     $(".close-popup-btn").on("click", function (){
       $(".popup-wrapper").removeClass("active-popup");
       $(".popup-form").removeClass("popup-form-show");
+      $("body").removeClass("under-modal");
     });
+
+    $(".check").on("click", function (){
+      $("body").toggleClass("under-modal");
+    });
+
+    $(".lang-link").on("click", function (){
+      $(".lang-link").removeClass("active-lang");
+      $(this).addClass("active-lang");
+    });
+
+    $(".choice-link").on("click", function (){
+      $(".choice-link").removeClass("active-choice-link");
+      $(this).addClass("active-choice-link");
+    });
+
+    let mixer = mixitup('.publications-wrapper');
 
   });
   

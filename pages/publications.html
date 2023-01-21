@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../img/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../fonts/font.css">
+    <link rel="stylesheet" href="../assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="../assets/slick/slick.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/media.css">
     <title>Publications - HLEGAL Law company</title>
@@ -69,12 +71,12 @@
             <div class="container wide">
                 <div class="choice-wrapper flex items-center justify-center">
                     <div class="choice-box flex justify-between gap-2">
-                        <a href="#" class="choice-link active-choice-link">news</a>
-                        <a href="#" class="choice-link">articles</a>
+                        <a href="#" class="choice-link active-choice-link filter" data-filter=".news">news</a>
+                        <a href="#" class="choice-link filter" data-filter=".articles">articles</a>
                     </div>
                 </div>
                 <div class="publications-wrapper grid">
-                    <div class="publication-card flex flex-col">
+                    <div class="publication-card flex flex-col mix news" data-order="1">
                         <img src="../img/publication-1.jpg" class="publication-img" alt="publication-1">
                         <div class="publication-card-container">
                             <a href="./publications/equity.html" class="publication-header">Equity associate</a>
@@ -82,7 +84,7 @@
                             <p class="publication-intro">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
                         </div>                        
                     </div>
-                    <div class="publication-card flex flex-col">
+                    <div class="publication-card flex flex-col mix articles" data-order="2">
                         <img src="../img/publication-2.jpg" class="publication-img" alt="publication-2">
                         <div class="publication-card-container">
                             <a href="./publications/penalty.html" class="publication-header">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a>
@@ -90,7 +92,7 @@
                             <p class="publication-intro">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
                         </div>                        
                     </div>
-                    <div class="publication-card flex flex-col">
+                    <div class="publication-card flex flex-col mix news" data-order="3">
                         <img src="../img/publication-3.jpg" class="publication-img" alt="publication-3">
                         <div class="publication-card-container">
                             <a href="./publications/millenial.html" class="publication-header">Millennial Testament</a>
@@ -98,7 +100,7 @@
                             <p class="publication-intro">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
                         </div>                        
                     </div>
-                    <div class="publication-card flex flex-col">
+                    <div class="publication-card flex flex-col mix articles" data-order="4">
                         <img src="../img/publication-4.jpg" class="publication-img" alt="publication-4">
                         <div class="publication-card-container">
                             <a href="./publications/language.html" class="publication-header">Language Law: How to Make Your Website Relevant</a>
@@ -106,7 +108,7 @@
                             <p class="publication-intro">Natalia Kyryk, head of content studio Wordfactory.ua First, it's beautiful! This is the number one argument in favor of the Ukrainian-language site. Secondly, it is effective. IN…</p>
                         </div>                        
                     </div>
-                    <div class="publication-card flex flex-col">
+                    <div class="publication-card flex flex-col mix articles" data-order="5">
                         <img src="../img/publication-5.jpg" class="publication-img" alt="publication-5">
                         <div class="publication-card-container">
                             <a href="./publications/reimbursement.html" class="publication-header">Reimbursement of the child's tuition fees in kindergarten and school</a>
@@ -114,7 +116,7 @@
                             <p class="publication-intro">What we are talking about In June this year, the Verkhovna Rada amended the Tax Code of Ukraine. From now on, parents who receive an official…</p>
                         </div>                        
                     </div>
-                    <div class="publication-card flex flex-col">
+                    <div class="publication-card flex flex-col mix news" data-order="6">
                         <div class="publication-card-container">
                             <a href="./publications/currency.html" class="publication-header">Currency control is dead, long live currency control!</a>
                             <p class="publication-date">June 14, 2018</p>
@@ -167,7 +169,9 @@
             </div>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="../js/jquery-3.6.3.min.js"></script>
+    <script src="../assets/slick/slick.min.js"></script>
+    <script src="../assets/mixitup/mixitup.min.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>
