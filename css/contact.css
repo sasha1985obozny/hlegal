@@ -64,7 +64,7 @@
     fill: var(--accent-color);
 }
 
-.our-fb-page:hover + .contact-fb-link svg path {
+.our-fb-page:hover+.contact-fb-link svg path {
     fill: var(--accent-color);
 }
 
@@ -136,8 +136,7 @@ textarea:disabled {
 input:-webkit-autofill,
 input:-webkit-autofill:focus,
 input:-webkit-internal-autofill-selected,
-input:-webkit-internal-autofill-selected:focus
- {
+input:-webkit-internal-autofill-selected:focus {
     transition: background-color 600000s 0s, color 0s 0s;
 }
 
@@ -164,8 +163,8 @@ button.contact-btn {
     border: none;
     border-radius: 12px;
     cursor: pointer;
-	position: relative;
-	z-index: 50;
+    position: relative;
+    z-index: 50;
 }
 
 button.contact-btn:hover {
@@ -177,115 +176,130 @@ button.contact-btn:active {
 }
 
 .progress-btn {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: -5;
-	display: inline-block;
-	background: transparent;
-	font-family: "RobotoDraft","Roboto",sans-serif;
-	color: #fff;
-	font-weight: normal;
-	font-size: 20px;
-	transition: all 0.4s ease;
-	border-radius: 8px;
-	left: 0;
-	top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    display: inline-block;
+    background: transparent;
+    font-family: "RobotoDraft", "Roboto", sans-serif;
+    color: #fff;
+    font-weight: normal;
+    font-size: 20px;
+    transition: all 0.4s ease;
+    border-radius: 8px;
+    left: 0;
+    top: 0;
 }
+
 .progress-btn:not(.active) {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .progress-btn .btn {
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	line-height: 50px;
-	text-align: center;
-	z-index: 10;
-	opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 50px;
+    text-align: center;
+    z-index: 10;
+    opacity: 1;
 }
 
 .progress-btn .progress {
-	width: 0%;
-	z-index: 5;
-	background: #333;
-	opacity: 0;
-	transition: all 0.3s ease;
+    width: 0%;
+    z-index: 5;
+    background: #333;
+    opacity: 0;
+    transition: all 0.3s ease;
 }
+
 .progress-btn.active .progress {
-	opacity: 1;
-	animation: progress-anim 10s ease 0s;
+    opacity: 1;
+    animation: progress-anim 10s ease 0s;
 }
+
 .progress-btn[data-progress-style='indefinite'].active .progress {
-	animation: progress-indefinite-anim 1s infinite linear 0s;
+    animation: progress-indefinite-anim 1s infinite linear 0s;
 }
-.progress-btn[data-progress-style='fill-bottom'].active .progress, .progress-btn[data-progress-style='fill-top'].active .progress {
-	height: 5px;
+
+.progress-btn[data-progress-style='fill-bottom'].active .progress,
+.progress-btn[data-progress-style='fill-top'].active .progress {
+    height: 5px;
 }
+
 .progress-btn[data-progress-style='indefinite-circle'].active .progress {
-	animation: dash 2s ease infinite,
-	           rotate 2s linear infinite;
+    animation: dash 2s ease infinite,
+        rotate 2s linear infinite;
 }
 
 .progress-btn[data-progress-style='indefinite-circle'].active {
-	width: 100%;
+    width: 100%;
 }
 
 .progress-btn[data-progress-style='indefinite'] .progress {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: url("Spinner.svg");
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("Spinner.svg");
 }
 
 .progress-btn[data-progress-style='indefinite-circle'] .progress {
-	width: 40px;
-	height: 40px;
-	background: transparent;
-	position: absolute;
-	top: 5px;
-	left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 20px);
 }
+
 .progress-btn[data-progress-style='indefinite-circle'].active .btn {
-	opacity: 0;
+    opacity: 0;
 }
 
 .circle-loader {
-	fill: transparent;
-	stroke: #24a3ff;
-	stroke-width: 5;
+    fill: transparent;
+    stroke: #24a3ff;
+    stroke-width: 5;
 }
 
 @keyframes dash {
-	0% {
-		stroke-dasharray: 1,95;
-		stroke-dashoffset: 0;
-	}
-	50% {
-		stroke-dasharray: 85,95;
-		stroke-dashoffset: -25;
-	}
-	100% {
-		stroke-dasharray: 85,95;
-		stroke-dashoffset: -93;
-	}
+    0% {
+        stroke-dasharray: 1, 95;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 85, 95;
+        stroke-dashoffset: -25;
+    }
+
+    100% {
+        stroke-dasharray: 85, 95;
+        stroke-dashoffset: -93;
+    }
 }
 
 @keyframes rotate {
-	0% {transform: rotate(0deg); }
-	100% {transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes progress-indefinite-anim {
-	0% {
-		background-position: 0% 0%;
-	}
-	100% {
-		background-position: 100% 0%;
-	}
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
 }

@@ -96,7 +96,22 @@ $(document).ready(function() {
       $(this).addClass("active-choice-link");
     });
 
-    let mixer = mixitup('.publications-wrapper');
+    const tabsItem = document.querySelectorAll('.tabs-item');
+    const tabsBlock = document.querySelectorAll('.tabs-block');
+
+    for (let item of tabsItem) {
+      item.addEventListener('click', function(){
+        for (let element of tabsItem){         
+            element.classList.remove('active');                   
+        }
+        for (let element of tabsBlock){
+          element.classList.add('hidden');
+        }
+        const content = document.querySelector('#' + item.dataset.tab);
+        content.classList.remove('hidden');
+        this.classList.add('active');
+      })
+    }
 
   });
   

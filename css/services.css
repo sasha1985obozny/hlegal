@@ -55,7 +55,7 @@
 
 .service-img {
     width: 92px;
-    height: 92px;   
+    height: 92px;
     background-color: var(--white-color);
     border-radius: 24px;
 }
@@ -224,16 +224,16 @@
     max-width: max-content;
 }
 
-.recommended-publications-title{
+.recommended-publications-title {
     font-size: 14px;
     line-height: 1.21;
     color: var(--active-regular-color);
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: all .7s ease;  
+    transition: all .7s ease;
 }
 
-.recommended-publications-header:hover .recommended-publications-title{
+.recommended-publications-header:hover .recommended-publications-title {
     color: var(--accent-color);
 }
 
@@ -241,7 +241,7 @@
     transition: all .7s ease;
 }
 
-.recommended-publications-header:hover svg path.recomended-arrow{
+.recommended-publications-header:hover svg path.recomended-arrow {
     stroke: var(--accent-color);
 }
 
@@ -251,13 +251,13 @@
     padding-top: 30px;
 }
 
-.page-header.mt-10{
+.page-header.mt-10 {
     margin-top: 10px;
 }
 
 .recommended-publications-wrapper.grid {
-    grid-template-areas: 
-    'first-article second-article third-article';
+    grid-template-areas:
+        'first-article second-article third-article';
     gap: 30px;
 }
 

@@ -110,14 +110,52 @@
     .footer-right-side {
         margin-top: 30px;
     }
+
+    .tabs-wrapper {
+        flex-direction: column;
+    }
+
+    .tabs-items-wrap {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+
+    .tabs-items-wrap {
+        padding-right: 0;
+    }
+
+    .tabs-block {
+        border-left: none;
+        border-top: 4px solid rgba(255, 255, 255, 0.3);
+        padding-top: 60px;
+        padding-left: 0;
+    }
+
+    .tabs-item {
+        font-size: 30px;
+        line-height: 1.23;
+        white-space: nowrap;
+    }
+
+    .tabs-items-wrap::-webkit-scrollbar {
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .tabs-items-wrap {
+        padding-bottom: 10px;
+        flex-direction: row;
+        overflow: auto;
+    }
+
 }
 
 @media screen and (max-width: 992px) {
     .header-wrapper.grid {
-        grid-template-areas: 
-        'top-links top-links top-links top-links'
-        'logo logo logo logo'
-        'bottom-links bottom-links bottom-links bottom-links';
+        grid-template-areas:
+            'top-links top-links top-links top-links'
+            'logo logo logo logo'
+            'bottom-links bottom-links bottom-links bottom-links';
     }
 
     .top-links.flex.justify-end,
@@ -125,14 +163,14 @@
         justify-content: flex-start;
     }
 
-    .top-links{
+    .top-links {
         margin-bottom: 30px;
     }
 
     .wrapper-inner-team.grid {
-        grid-template-areas: 
-        'inner-team-photo inner-team-info'
-        'inner-team-descr inner-team-descr';
+        grid-template-areas:
+            'inner-team-photo inner-team-info'
+            'inner-team-descr inner-team-descr';
         column-gap: 30px;
     }
 
@@ -192,9 +230,9 @@
     }
 
     .recommended-publications-wrapper.grid {
-        grid-template-areas: 
-        'first-article second-article'
-        'third-article third-article';
+        grid-template-areas:
+            'first-article second-article'
+            'third-article third-article';
     }
 }
 
@@ -230,7 +268,7 @@
         display: block;
         top: -72px;
     }
-    
+
     .burger {
         display: block;
         top: -72px;
@@ -238,7 +276,7 @@
 
     :root {
         --container-space: 30px;
-      }
+    }
 
     .header {
         padding-top: 0;
@@ -319,7 +357,7 @@
 
     .nav-link-item {
         display: inline-block;
-        width: 100%;        
+        width: 100%;
         height: 100%;
     }
 
@@ -354,10 +392,10 @@
     }
 
     .recommended-publications-wrapper.grid {
-        grid-template-areas: 
-        'first-article'
-        'second-article'
-        'third-article';
+        grid-template-areas:
+            'first-article'
+            'second-article'
+            'third-article';
     }
 
     .service-entry-list-wrapper {
@@ -383,17 +421,17 @@
 @media screen and (max-width: 560px) {
     .wrapper {
         grid-template-columns: repeat(1, 1fr);
-    }   
+    }
 
     .publications-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
 
     .wrapper-inner-team.grid {
-        grid-template-areas: 
-        'inner-team-photo'
-        'inner-team-info'
-        'inner-team-descr';
+        grid-template-areas:
+            'inner-team-photo'
+            'inner-team-info'
+            'inner-team-descr';
         grid-template-columns: 1fr;
     }
 
@@ -414,7 +452,7 @@
     .logo-img {
         max-width: 69px;
     }
-    
+
     .slash-img {
         max-width: 11px;
     }
@@ -429,15 +467,15 @@
 
     .logo {
         margin-bottom: 10px;
-    }   
-    
+    }
+
     .check {
         top: -57px;
     }
-    
+
     .burger {
         top: -57px;
-    } 
+    }
 
     .header-nav ul {
         padding-top: 60px;
@@ -461,6 +499,19 @@
         display: none;
     }
 
+    .tabs-items-wrap {
+        gap: 15px;
+    }
+
+    .tabs-block-head {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .tabs-block {
+        padding-top: 30px;
+    }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -478,7 +529,3 @@
         font-size: 18px;
     }
 }
-
-
-
-

@@ -15,9 +15,9 @@
 }
 
 .header-wrapper.grid {
-    grid-template-areas: 
-    'logo logo top-links top-links'
-    'logo logo bottom-links bottom-links';
+    grid-template-areas:
+        'logo logo top-links top-links'
+        'logo logo bottom-links bottom-links';
 }
 
 .grid .logo {
@@ -72,7 +72,7 @@
 .separator {
     display: inline-block;
     width: 6px;
-    height: 6px;    
+    height: 6px;
     border-radius: 50%;
 }
 
@@ -194,9 +194,11 @@
     0% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(15px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -212,8 +214,68 @@
     stroke: var(--accent-color);
 }
 
+/* --------------------------------------------------------TABS------------------------------------------------------ */
+
 .first-screen-tabs {
-    height: 300px;
+    margin-bottom: 60px;
+}
+
+.tabs-items-wrap {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 435px;
+    padding-right: 60px;
+}
+
+.tabs-item {
+    cursor: pointer;
+    max-width: max-content;
+    font-size: 38px;
+    line-height: 1.21;
+    font-weight: 700;
+    color: var(--font-gray);
+}
+
+.tabs-item:hover {
+    color: var(--accent-color);
+    transition: all 0.7s ease;
+}
+
+.tabs-item.active {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: var(--gradient-red-text);
+}
+
+.tabs-block {
+    color: var(--white-color);
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.tabs-block.default-visible {
+    display: flex;
+}
+
+.tabs-block.hidden {
+    display: none;
+}
+
+.tabs-block-head {
+    font-size: 30px;
+    line-height: 1.23;
+    font-weight: 700;
+}
+
+.tabs-block-text {
+    font-size: 19px;
+    line-height: 1.58;
 }
 
 /* --------------------------------------------------HOME-PAGE-SLIDER--------------------------------------------- */
@@ -283,11 +345,11 @@
     transition: all .7s ease;
 }
 
-.check:active + .burger {
+.check:active+.burger {
     background-color: var(--separator-color);
 }
 
-.check:active + .burger.purple-burger {
+.check:active+.burger.purple-burger {
     background-color: rgba(245, 245, 250, 0.2);
 }
 
@@ -317,27 +379,27 @@
     top: 21px;
 }
 
-.check:checked ~ .burger span:first-child {
+.check:checked~.burger span:first-child {
     top: -10px;
     opacity: 0;
 }
 
-.check:checked ~ .burger span:nth-child(2) {
+.check:checked~.burger span:nth-child(2) {
     transform: rotate(45deg);
     background-color: var(--negative-color);
 }
 
-.check:checked ~ .burger span:nth-child(3) {
+.check:checked~.burger span:nth-child(3) {
     transform: rotate(-45deg);
     background-color: var(--negative-color);
 }
 
-.check:checked ~ .burger span:last-child {
+.check:checked~.burger span:last-child {
     top: 24px;
     opacity: 0;
 }
 
-.check:checked ~ .header-nav {
+.check:checked~.header-nav {
     display: block;
     background-color: rgba(50, 50, 100, 0.7);
     z-index: 1;
@@ -345,7 +407,7 @@
     inset: 0;
 }
 
-.check:checked ~ .header-nav ul {
+.check:checked~.header-nav ul {
     transform: translateY(0);
 }
 
@@ -411,7 +473,7 @@
     fill: var(--grey-bg-alt);
 }
 
-.more-team-link:hover + .team-name{
+.more-team-link:hover+.team-name {
     color: var(--accent-color);
 }
 
@@ -419,16 +481,16 @@
     color: var(--accent-color);
 }
 
-.team-name:hover + .more-team-link svg path{
+.team-name:hover+.more-team-link svg path {
     stroke: var(--accent-color);
 }
 
 /* --------------------------------------------------INNER-TEAM------------------------------------------------ */
 
 .wrapper-inner-team.grid {
-    grid-template-areas: 
-    'inner-team-photo inner-team-info'
-    'inner-team-photo inner-team-descr';
+    grid-template-areas:
+        'inner-team-photo inner-team-info'
+        'inner-team-photo inner-team-descr';
     column-gap: var(--container-space);
     grid-template-columns: 400px 1fr;
     min-height: 500px;
@@ -462,7 +524,7 @@
     margin-top: 15px;
 }
 
-.inner-team-descr-text + .inner-team-descr-text {
+.inner-team-descr-text+.inner-team-descr-text {
     margin-top: 30px;
 }
 
@@ -509,8 +571,8 @@
 }
 
 .map-link {
-    font-size: 12px;    
-    text-transform: uppercase;    
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 .map-link:hover,
