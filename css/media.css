@@ -140,10 +140,11 @@
     .tabs-items-wrap::-webkit-scrollbar {
         background: transparent;
         cursor: pointer;
+        height: 0;
     }
 
     .tabs-items-wrap {
-        padding-bottom: 10px;
+        padding-bottom: 30px;
         flex-direction: row;
         overflow: auto;
     }
